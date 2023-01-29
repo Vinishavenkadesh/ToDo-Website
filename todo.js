@@ -4,11 +4,17 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filterTodo = document.querySelector(".todo-filter");
 //EVENT LISTENER
-todoButton.addEventListener("click", addTodo);
+todoButton.addEventListener("click", checkingInputBeforeAddingTodo);
 todoList.addEventListener("click", deleteCheck);
 filterTodo.addEventListener("click", filterOption);
 //FUNCTION
 
+function checkingInputBeforeAddingTodo(e) {
+  e.preventDefault();
+  if (!todoInput.value == "") {
+    addTodo(e);
+  }
+}
 function addTodo(event) {
   //PREVENTING DEFAULT FROM FORM
   event.preventDefault();
