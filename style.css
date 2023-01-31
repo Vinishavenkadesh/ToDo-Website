@@ -130,10 +130,10 @@ select{
   background: black;
   position:absolute;
   right: 0;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 0.2rem;;
+  padding-top: 0.4rem;;
   pointer-events: none;
   pointer-events: none;
   transition: all 0.3s ease;
